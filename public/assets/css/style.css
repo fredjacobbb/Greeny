@@ -1,0 +1,124 @@
+.desktop-f {
+  display: none;
+}
+
+.mobile-f {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  margin-top: 1.2em;
+}
+.mobile-f i {
+  color: #484b25;
+  font-size: x-large;
+  margin: 0.8em;
+  z-index: 999;
+}
+.mobile-f i:hover {
+  cursor: pointer;
+}
+.mobile-f ul {
+  position: absolute;
+  text-align: center;
+  height: 55vh;
+  padding: 0;
+  top: 0%;
+  background-color: #d4863c;
+  width: 90%;
+  max-width: 400px;
+  min-width: 250px;
+  border-radius: 0 30% 40% 30%;
+  z-index: 999;
+}
+.mobile-f ul li {
+  list-style: none;
+  width: 100%;
+  font-size: large;
+  margin: 0.5em;
+}
+.mobile-f ul li a {
+  color: white;
+  text-decoration: none;
+}
+.mobile-f .hide {
+  display: none;
+  animation: hideNav 2s;
+}
+.mobile-f .show {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  animation: burgerToX 1s;
+}
+.mobile-f .active::before {
+  content: "";
+}
+.mobile-f .fa-xmark {
+  animation: moveXmark 3s;
+  color: white;
+  font-size: xx-large;
+  z-index: 9999;
+}
+@keyframes moveXmark {
+  0% {
+    color: rgba(255, 255, 255, 0);
+  }
+  100% {
+    color: white !important;
+  }
+}
+@keyframes burgerToX {
+  0% {
+    top: -20%;
+    left: -20%;
+  }
+  100% {
+    top: 0%;
+    left: 0;
+  }
+}
+@keyframes xToBurger {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  100% {
+    top: -20%;
+    left: -20%;
+  }
+}
+@keyframes hideNav {}
+
+@media (width > 750px) {
+  body {
+    margin: 1em;
+  }
+  .mobile-f {
+    display: none;
+  }
+  .desktop-f {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .desktop-f ul {
+    display: inline;
+    background-color: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  .desktop-f ul li {
+    display: inline;
+    margin: 0.5em;
+  }
+  .desktop-f ul li a {
+    color: #484b25;
+    text-decoration: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

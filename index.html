@@ -5,10 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Greeny</title>
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/assets/css/style.css">
 </head>
 
 <body>
+    <header>
 
+        <!-- MOBILE -->
+        <nav class="mobile-f">
+            <i class="fa-solid fa-bars burger-icon" onclick="navbarEffect.transformBurgerIcon()"></i>
+            <img src="public/assets/img/brandIcon.png" alt="">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <ul class="nav-items hide">
+                <li><a class="active" href="">Accueil</a></li>
+                <li><a href="">Evenement</a></li>
+                <li><a href="">Echange</a></li>
+                <li><a href="">A propos</a></li>
+                <li><a href="">FAQ</a></li>
+            </ul>
+        </nav>
+
+        <!-- UP TO MOBILE LANDSCAPE -->
+        <nav class="desktop-f">
+            <img src="public/assets/img/brandIcon.png" alt="">
+            <ul class="nav-items-desktop">
+                <li><a class="active" href="">Accueil</a></li>
+                <li><a href="">Evenement</a></li>
+                <li><a href="">Echange</a></li>
+                <li><a href="">A propos</a></li>
+                <li><a href="">FAQ</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <script src="public/assets/js/index.js"></script>
 </body>
 
 </html>
