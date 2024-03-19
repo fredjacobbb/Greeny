@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon profil - Greeny</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./public/assets/css/style.css">
+</head>
+
+<body>
+    <header class="my-5 container">
+
+        <!-- MOBILE -->
+        <nav
+            class="d-md-none d-flex flex-wrap justify-content-between align-content-center align-items-center w-100 px-3">
+            <i class="fa-solid fs-2 fa-bars burger-icon" onclick="navbarEffect.run()"></i>
+            <i class="fa-solid fa-xmark cross-icon text-light hide fs-2" onclick="navbarEffect.run()"></i>
+            <img src="public/assets/img/home-page/brandIcon.png" alt="icon de la marque">
+            <i class="fa-solid fs-2 fa-magnifying-glass" onclick="navbarEffect.runSearch()"></i>
+            <ul class="position-absolute fs-4 menu hide-menu">
+                <li><a href="./home.html">Accueil</a></li>
+                <li><a href="./home.html">Évènements</a></li>
+                <li><a href="./products.html">Échanges</a></li>
+                <li><a href="./aboutus.html">À propos</a></li>
+                <li><a href="./questions.html">FAQ</a></li>
+                <li><a href="./user_personal_profil.html">Profil</a></li>
+
+            </ul>
+            <input type="search" class="w-75 mx-auto search-bar mt-5 hide">
+        </nav>
+
+        <!-- UP TO MOBILE LANDSCAPE -->
+        <nav class="d-none d-md-flex justify-content-between align-items-around w-100 align-content-center">
+            <img src="public/assets/img/home-page/brandIcon.png" class="ms-2" alt="icon de la marque">
+            <div class="w-100 d-flex flex-wrap justify-content-end align-content-between me-4">
+                <ul class="w-100 text-end p-0">
+                    <li class="d-inline ms-lg-5 ms-md-2 ms-3"><a class="fw-bold fs-6 text_darkgreen active_nav"
+                            href="./home.html">Accueil</a></li>
+                    <li class="d-inline ms-lg-5 ms-md-2 ms-3"><a class="fw-bold fs-6 text_darkgreen"
+                            href="./home.html">Évènements</a></li>
+                    <li class="d-inline ms-lg-5 ms-md-2 ms-3"><a class="fw-bold fs-6 text_darkgreen"
+                            href="./products.html">Échanges</a></li>
+                    <li class="d-inline ms-lg-5 ms-md-2 ms-3"><a class="fw-bold fs-6 text_darkgreen"
+                            href="./aboutus.html">À
+                            propos</a></li>
+                    <li class="d-inline ms-lg-5 ms-md-2 ms-3"><a class="fw-bold fs-6 text_darkgreen"
+                            href="./questions.html">FAQ</a>
+                    </li>
+                    <li class="d-inline ms-lg-5 ms-md-2 ms-3"><a class="fw-bold fs-6 text_darkgreen"
+                            href="./user_personal_profil.html">Profil</a>
+                    </li>
+                </ul>
+                <div class="w-50 mx-auto">
+                    <input class="input-group rounded" type="search">
+                    <i class="fa-solid position-absolute fa-magnifying-glass"></i>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <div class="container">
+            <div class="row my-5 align-items-center">
+                <div class="container col-lg-8 text-center text-lg-start">
+                    <h1 class="text_titlegreen fw-bold fs-2"> Bonjour, Edward ! </h1>
+                    <img src="./public/assets/img/personal-profil/stars.png" class="my-2" height="20"
+                        alt="Icon note utilisateur">
+                    <p class="text_darkgreen my-4 text-justify"> Bienvenue dans mon jardin gastronomique ! 🌿 <br>
+                        Enchanté de vous rencontrer, je suis Edward Gate, chef passionné et amoureux de la nature. Je
+                        m'efforce de créer des plats qui
+                        célèbrent les saveurs authentiques et les ingrédients les plus frais. Je crois fermement en
+                        l'importance de la diversité
+                        végétale et je suis toujours ouvert aux échanges et aux partages de connaissances. Ensemble,
+                        cultivons une communauté où la passion pour la gastronomie et la nature se rencontrent
+                        harmonieusement. <br>
+                        N'hésitez pas à me contacter pour discuter de nos projets de jardinage ou pour partager vos
+                        variétés préférées. Je suis impatient de faire pousser ensemble de délicieux ingrédients qui
+                        enchanteront les papilles de mes convives !</p>
+                </div>
+                <div class="col-12 col-lg-4 d-flex justify-content-center justify-content-lg-end">
+                    <img src="./public/assets/img/personal-profil/icon_user_profil.png" height="300" alt="">
+                </div>
+                <div class="col-12">
+                    <button type="button"
+                        class=" d-flex justify-content-center btn btn-primary col-6 col-lg-2 mx-auto mt-5 bg_lightgreen border-0 no-hover shadow rounded-24 prevent-hover"
+                        data-bs-toggle="modal" data-bs-target="#ajouterArticleModal">
+                        Ajouter un article
+                    </button>
+                    <div class="modal fade" id="ajouterArticleModal" tabindex="-1"
+                        aria-labelledby="ajouterArticleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header d-flex justify-content-center align-items-center">
+                                    <h5 class="modal-title text_titlegreen fw-bold my-3 col-11 d-flex justify-content-center"
+                                        id="ajouterArticleModalLabel">
+                                        Ajouter un
+                                        article</h5>
+                                    <button type="button" class="btn-close col-1" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form id="articleForm text">
+                                        <div class="mb-3">
+                                            <label for="nomArticle" class="form-label text_darkgreen"></label>
+                                            <input type="text" class="form-control rounded-18" id="nomArticle"
+                                                placeholder="Nom de votre article" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="descriptionArticle" class="form-label text_darkgreen"></label>
+                                            <textarea class="form-control rounded-18" id="descriptionArticle" rows="3"
+                                                placeholder="Description de votre article" required></textarea>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="photoArticle" class="form-label text_darkgreen"></label>
+                                            <input type="file" class="form-control rounded-18" id="photoArticle"
+                                                accept="image/*" multiple onchange="handleFileSelect(event)" required>
+                                        </div>
+                                        <div id="preview"></div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer text-center">
+                                    <button type="submit"
+                                        class="btn col-5 col-lg-4 bg_lightgreen text-light border-0 no-hover shadow rounded-24 mx-auto prevent-hover">Enregistrer</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <h2 class="col-12 fs22 fw-bold text_titlegreen text-center text-lg-start">Vos articles : </h2>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row d-flex justify-content-center my-5">
+                <div class="col-xl-5 col-lg-6 col-sm-12 text-center text-lg-start">
+                    <img src="./public/assets/img/personal-profil/mirabelle.png" class="img-articles col-12 col-md-12"
+                        alt="Prunier mirabelle">
+                </div>
+                <div class="col-xl-7 col-lg-6 col-sm-12">
+                    <h3 class="fs22 text_titlegreen text-center text-lg-start"> Graines de tomates - <span
+                            class="fst-italic">Amiens</span>
+                    </h3>
+                    <p class="text_darkgreen text-center text-lg-start">Découvrez une sélection de graines de tomates de
+                        qualité supérieure pour égayer votre jardin de couleurs et de saveurs. Des variétés telles que
+                        le "Cœur de Bœuf" et le "Roma" attendent d'être plantées et cultivées avec amour. Récoltez des
+                        tomates juteuses et délicieuses directement de votre propre jardin. Faites de votre espace
+                        extérieur un paradis de tomates avec nos graines sélectionnées avec soin. Plantez, prenez soin,
+                        savourez - une expérience de culture enrichissante vous attend.</p>
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn bg_lightgreen text-light prevent-hover mx-3">Modifier</button>
+                        <button type="button" class="btn bg_orange text-light prevent-hover mx-3">Supprimer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container-fluid bg_orange mb-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12">
+                        <p class="text-light mt-3 mb-0 text-center text-lg-start">LaManuEcology</p>
+                        <p class="text-light mb-0 text-center text-lg-start">238 Earls Ct Rd, Londres SW5 9AA</p>
+                        <p class="text-light mb-0 text-center text-lg-start">+44 20 7123 4567</p>
+                        <p class="text-light text-center text-lg-start">contact@lamanuecology.com</p>
+                    </div>
+                    <div class="col-lg-4 d-flex justify-content-center align-items-center">
+                        <a href=""><img src="./public/assets/img/questions-page/icon_ig.png" height="30" class="m-2"
+                                alt="Logo Instagram"></a>
+                        <a href=""><img src="./public/assets/img/questions-page/icon_twitter.png" height="30"
+                                class="m-2" alt="Logo Twitter / X"></a>
+                        <a href=""><img src="./public/assets/img/questions-page/icon_fb.png" height="30" class="m-2"
+                                alt="Logo Facebook"></a>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <p class="mt-3 mb-0 text-center text-lg-end"><a class="text-decoration-none
+                            text-light" href="./aboutus.html">À propos</a></p>
+                        <p class="mb-0 text-center text-lg-end"> <a class="text-decoration-none
+                            text-light" href="./questions.html">F.A.Q & Contact</a></p>
+                        <p class="mb-0 text-center text-lg-end"><a class="text-decoration-none
+                            text-light" href="">Mentions Légales</a></p>
+                        <p class="mb-0 text-center text-lg-end"><a class="text-decoration-none
+                            text-light" href="">CGU</a></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <p class="col-12 text-center text-light">Copyright Greeny 2024</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/afc6a54030.js" crossorigin="anonymous"></script>
+    <script src="public/assets/js/index.js"></script>
+    <script>
+        var myModal = new bootstrap.Modal(document.getElementById('ajouterArticleModal'));
+
+        // Fonction pour gérer la sélection de fichiers
+        function handleFileSelect(event) {
+            const files = event.target.files;
+            const preview = document.getElementById('preview');
+
+            // Afficher un message d'erreur si plus de 3 fichiers sont sélectionnés
+            if (files.length > 3) {
+                alert('Vous ne pouvez pas ajouter plus de 3 photos.');
+                event.target.value = ''; // Réinitialiser la valeur de l'input file
+                return false;
+            }
+
+            preview.innerHTML = ''; // Effacer le contenu précédent
+
+            // Afficher les miniatures des fichiers sélectionnés
+            for (const file of files) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    const img = document.createElement('img');
+                    img.src = e.target.result;
+                    img.style.maxWidth = '100px'; // Limiter la taille de l'image
+                    preview.appendChild(img);
+                };
+                reader.readAsDataURL(file);
+            }
+        }
+
+        // Vérifier si au moins une photo est ajoutée avant de soumettre le formulaire
+        document.getElementById('articleForm').addEventListener('submit', function (event) {
+            const files = document.getElementById('photoArticle').files;
+            if (files.length < 1) {
+                alert('Vous devez ajouter au moins une photo.');
+                event.preventDefault(); // Empêcher la soumission du formulaire
+            }
+        });
+    </script>
+</body>
+
+
+</html>

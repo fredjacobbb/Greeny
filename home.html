@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeny</title>
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/assets/css/style.css">
+</head>
+
+<body>
+    <header class="my-5 container">
+
+        <!-- MOBILE -->
+        <nav
+            class="d-md-none d-flex flex-wrap justify-content-between align-content-center align-items-center w-100 px-3">
+            <i class="fa-solid fs-2 fa-bars burger-icon" onclick="navbarEffect.run()"></i>
+            <i class="fa-solid fa-xmark cross-icon text-light hide fs-2" onclick="navbarEffect.run()"></i>
+            <img src="public/assets/img/home-page/brandIcon.png" alt="icon de la marque">
+            <i class="fa-solid fs-2 fa-magnifying-glass" onclick="navbarEffect.runSearch()"></i>
+            <ul class="position-absolute fs-4 menu hide-menu">
+                <li><a href="./home.html">Accueil</a></li>
+                <li><a href="#evenements">Évènements</a></li>
+                <li><a href="./products.html">Échanges</a></li>
+                <li><a href="./aboutus.html">À propos</a></li>
+                <li><a href="./questions.html">FAQ</a></li>
+                <li><a href="./user_personal_profil.html">Profil</a></li>
+
+            </ul>
+            <input type="search" class="w-75 mx-auto search-bar mt-5 hide">
+        </nav>
+
+        <!-- UP TO MOBILE LANDSCAPE -->
+        <nav class="d-none d-md-flex justify-content-between align-items-around w-100 align-content-center">
+            <img src="public/assets/img/home-page/brandIcon.png" class="ms-2" alt="icon de la marque">
+            <div class="w-100 d-flex flex-wrap justify-content-end align-content-between me-4">
+                <ul class="w-100 text-end p-0">
+                    <li class="d-inline ms-lg-5 ms-md-2 ms-3"><a class="fw-bold fs-6 text_darkgreen active_nav"
+                            href="./home.html">Accueil</a></li>
+                    <li class="d-inline ms-lg-5 ms-md-2 ms-3"><a class="fw-bold fs-6 text_darkgreen"
+                            href="#evenements">Évènements</a></li>
+                    <li class="d-inline ms-lg-5 ms-md-2 ms-3"><a class="fw-bold fs-6 text_darkgreen"
+                            href="./products.html">Échanges</a></li>
+                    <li class="d-inline ms-lg-5 ms-md-2 ms-3"><a class="fw-bold fs-6 text_darkgreen"
+                            href="./aboutus.html">À
+                            propos</a></li>
+                    <li class="d-inline ms-lg-5 ms-md-2 ms-3"><a class="fw-bold fs-6 text_darkgreen"
+                            href="./questions.html">FAQ</a>
+                    </li>
+                    <li class="d-inline ms-lg-5 ms-md-2 ms-3"><a class="fw-bold fs-6 text_darkgreen"
+                            href="./user_personal_profil.html">Profil</a>
+                    </li>
+                </ul>
+                <div class="w-50 mx-auto">
+                    <input class="input-group rounded" type="search">
+                    <i class="fa-solid position-absolute fa-magnifying-glass"></i>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <section class="hero-container d-flex justify-content-center align-content-center align-items-center my-5">
+        <p class="fs-3 text_darkgreen fw-bold d-md-inline d-none d-xs-none my-md-0 ml-md-4">
+            Semons des liens et cultivons des amitiés dans notre jardin d'échanges. Chaque conseil est une pépite,
+            chaque partage une floraison collective.
+        </p>
+        <img src="public/assets/img/home-page/heroImage1.png" class='d-none d-md-block'
+            alt="image page principale jeune pousses">
+        <img src="public/assets/img/home-page/heroImage2.png" class="d-md-none w-100"
+            alt="image page principale jeunes pousses">
+    </section>
+
+    <section class="container-fluid text-center my-5">
+        <div class="container">
+            <p class="p-3 my-5 bg_silver">
+                Bienvenue sur Greeny, le site communautaire dédié aux amoureux de la nature et du jardinage ! Sur
+                Greeny, vous pouvez partager, échanger et découvrir une variété de graines, semences, fleurs et arbustes
+                avec une communauté passionnée. Que vous soyez un novice en jardinage ou un vétéran chevronné, Greeny
+                offre un espace convivial pour partager vos conseils, astuces et expériences.
+                Participez à des événements et réunions organisés par le site, où vous pourrez rencontrer d'autres
+                membres, élargir votre réseau et enrichir vos connaissances. Greeny favorise l'échange
+                intergénérationnel et encourage la croissance collective de compétences en jardinage. Rejoignez-nous sur
+                Greeny, où la passion pour la verdure et la camaraderie fleurissent au cœur de notre communauté.
+            </p>
+            <div class="row mx-auto text-center outer-circle">
+                <div class="col-12 col-md-4 my-5">
+                    <img class="w-50 border-rounded bg_lightgreen p-2" src="public/assets/img/home-page/category1.png"
+                        alt="image graine">
+                    <p class="mt-4 fw-bold text_darkgreen text-around-image">Graines</p>
+                </div>
+                <div class="col-12 col-md-4 my-5">
+                    <img class="w-50 border-rounded bg_orange p-2" src="public/assets/img/home-page/category2.png"
+                        alt="image arbre">
+                    <p class="mt-4 fw-bold text_darkgreen">Boûtures</p>
+                </div>
+                <div class="col-12 col-md-4 my-5">
+                    <img class="w-50 border-rounded bg_lightgreen p-2" src="public/assets/img/home-page/category3.png"
+                        alt="image bouture">
+                    <p class="mt-4 fw-bold text_darkgreen">Arbres / Arbustes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- NOS EVENEMENTS -->
+
+    <section id="evenements" class="container-fluid container-events my-5 bg_lightgreen py-5 text-center">
+        <h2 id="event" class="text-center text-light fw-bold">NOS EVENEMENTS</h2>
+
+        <!-- MOBILE -->
+        <div id="carouselExampleInterval" class="carousel my-5 w-100 w-sm-75 mx-auto slide d-sm-none"
+            data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="public/assets/img/home-page/calendrier1.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="public/assets/img/home-page/calendrier2.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="public/assets/img/home-page/calendrier3.webp" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- UP THAN TABLET -->
+        <div class="container-fluid my-5 d-none d-md-flex">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="public/assets/img/home-page/calendrier1.webp" alt="...">
+                    </div>
+                    <div class="col-4">
+                        <img src="public/assets/img/home-page/calendrier2.webp" alt="...">
+                    </div>
+                    <div class="col-4">
+                        <img src="public/assets/img/home-page/calendrier3.webp" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container container-temoignage py-5 text-center">
+        <h2 class="fw-bold text-center mb-5">TEMOIGNAGES</h2>
+        <!-- SLIDER FOR MOBILE -->
+        <div class="temoignage-card col-md-4 d-md-none my-5">
+            <img class="my-4" src="public/assets/img/home-page/image 12.png" alt="photos_profils_temoignages">
+            <div>
+                <p class="my-5 blub mx-auto">
+                    “ Le Lorem Ipsum est simplement du faux texte employé dans la co impression. Le Lorem Ipsum est le
+                    faux texte standard
+                </p>
+            </div>
+            <div class="temoignage-card col-md-4">
+                <img class="my-4" src="public/assets/img/home-page/image 11.png" alt="photos_profils_temoignages">
+                <div>
+                    <p class="my-5 blub mx-auto">
+                        “ Le Lorem Ipsum est simplement du faux texte employé dans la co impression. Le Lorem Ipsum est
+                        le faux texte standard
+                    </p>
+                </div>
+            </div>
+            <div class="temoignage-card col-md-4">
+                <img class="my-4" src="public/assets/img/home-page/image 10.png" alt="photos_profils_temoignages">
+                <div>
+                    <p class="my-5 blub mx-auto">
+                        “ Le Lorem Ipsum est simplement du faux texte employé dans la co impression. Le Lorem Ipsum est
+                        le faux texte standard
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!--TEMOIGNAGES-->
+        <div class="d-none d-md-flex flex-md-wrap justify-content-around">
+            <div class="temoignage-card col-md-4">
+                <img class="my-4" src="public/assets/img/home-page/image 12.png" alt="photos_profils_temoignages">
+                <div>
+                    <p class="my-5 blub mx-auto">
+                        “ Le Lorem Ipsum est simplement du faux texte employé dans la co impression. Le Lorem Ipsum est
+                        le faux texte standard
+                    </p>
+                </div>
+            </div>
+            <div class="temoignage-card col-md-4">
+                <img class="my-4" src="public/assets/img/home-page/image 11.png" alt="photos_profils_temoignages">
+                <div>
+                    <p class="my-5 blub mx-auto">
+                        “ Le Lorem Ipsum est simplement du faux texte employé dans la co impression. Le Lorem Ipsum est
+                        le faux texte standard
+                    </p>
+                </div>
+            </div>
+            <div class="temoignage-card col-md-4">
+                <img class="my-4" src="public/assets/img/home-page/image 10.png" alt="photos_profils_temoignages">
+                <div>
+                    <p class="my-5 blub mx-auto">
+                        “ Le Lorem Ipsum est simplement du faux texte employé dans la co impression. Le Lorem Ipsum est
+                        le faux texte standard
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container-fluid bg_orange mb-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12">
+                        <p class="text-light mt-3 mb-0 text-center text-lg-start">LaManuEcology</p>
+                        <p class="text-light mb-0 text-center text-lg-start">238 Earls Ct Rd, Londres SW5 9AA</p>
+                        <p class="text-light mb-0 text-center text-lg-start">+44 20 7123 4567</p>
+                        <p class="text-light text-center text-lg-start">contact@lamanuecology.com</p>
+                    </div>
+                    <div class="col-lg-4 d-flex justify-content-center align-items-center">
+                        <a href=""><img src="./public/assets/img/questions-page/icon_ig.png" height="30" class="m-2"
+                                alt="Logo Instagram"></a>
+                        <a href=""><img src="./public/assets/img/questions-page/icon_twitter.png" height="30"
+                                class="m-2" alt="Logo Twitter / X"></a>
+                        <a href=""><img src="./public/assets/img/questions-page/icon_fb.png" height="30" class="m-2"
+                                alt="Logo Facebook"></a>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <p class="mt-3 mb-0 text-center text-lg-end"><a class="text-decoration-none
+                            text-light" href="./aboutus.html">À propos</a></p>
+                        <p class="mb-0 text-center text-lg-end"> <a class="text-decoration-none
+                            text-light" href="./questions.html">F.A.Q & Contact</a></p>
+                        <p class="mb-0 text-center text-lg-end"><a class="text-decoration-none
+                            text-light" href="">Mentions Légales</a></p>
+                        <p class="mb-0 text-center text-lg-end"><a class="text-decoration-none
+                            text-light" href="">CGU</a></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <p class="col-12 text-center text-light">Copyright Greeny 2024</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="public/assets/js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="public/assets/css/style.css">
+    <title>Greeny</title>
+</head>
+
+<body>
+    <header class="my-5 container">
+
+        <!-- MOBILE -->
+        <nav
+            class="d-md-none d-flex flex-wrap justify-content-between align-content-center align-items-center w-100 px-3">
+            <i class="fa-solid fs-2 fa-bars burger-icon" onclick="navbarEffect.run()"></i>
+            <i class="fa-solid fa-xmark cross-icon text-light hide fs-2" onclick="navbarEffect.run()"></i>
+            <img src="public/assets/img/home-page/brandIcon.png" alt="icon de la marque">
+            <i class="fa-solid fs-2 fa-magnifying-glass" onclick="navbarEffect.runSearch()"></i>
+            <ul class="position-absolute fs-4 menu hide-menu">
+                <li><a href="./home.html">Accueil</a></li>
+                <li><a href="./home.html">Évènements</a></li>
+                <li><a href="./products.html">Échanges</a></li>
+                <li><a href="./aboutus.html">À propos</a></li>
+                <li><a href="./questions.html">FAQ</a></li>
+                <li><a href="./user_personal_profil.html">Profil</a></li>
+
+            </ul>
+            <input type="search" class="w-75 mx-auto search-bar mt-5 hide">
+        </nav>
+
+        <!-- UP TO MOBILE LANDSCAPE -->
+        <nav class="d-none d-md-flex justify-content-between align-items-around w-100 align-content-center">
+            <img src="public/assets/img/home-page/brandIcon.png" class="ms-2" alt="icon de la marque">
+            <div class="w-100 d-flex flex-wrap justify-content-end align-content-between me-4">
+                <ul class="w-100 text-end p-0">
+                    <li class="d-inline ms-lg-5 ms-md-2 ms-3"><a class="fw-bold fs-6 text_darkgreen active_nav"
+                            href="./home.html">Accueil</a></li>
+                    <li class="d-inline ms-lg-5 ms-md-2 ms-3"><a class="fw-bold fs-6 text_darkgreen"
+                            href="./home.html">Évènements</a></li>
+                    <li class="d-inline ms-lg-5 ms-md-2 ms-3"><a class="fw-bold fs-6 text_darkgreen"
+                            href="./products.html">Échanges</a></li>
+                    <li class="d-inline ms-lg-5 ms-md-2 ms-3"><a class="fw-bold fs-6 text_darkgreen"
+                            href="./aboutus.html">À
+                            propos</a></li>
+                    <li class="d-inline ms-lg-5 ms-md-2 ms-3"><a class="fw-bold fs-6 text_darkgreen"
+                            href="./questions.html">FAQ</a>
+                    </li>
+                    <li class="d-inline ms-lg-5 ms-md-2 ms-3"><a class="fw-bold fs-6 text_darkgreen"
+                            href="./user_personal_profil.html">Profil</a>
+                    </li>
+                </ul>
+                <div class="w-50 mx-auto">
+                    <input class="input-group rounded" type="search">
+                    <i class="fa-solid position-absolute fa-magnifying-glass"></i>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- CORP DE TEXTE -->
+    <main>
+        <article class="titre text-center my-5">
+            <h1 class="text_titlegreen fw-bold fs-2"> À propos de nous </h1>
+        </article>
+        <!-- CONTENEUR 1 -->
+        <div class="container my-5">
+            <div class="row d-flex align-items-center">
+                <!-- BLOC TEXTE -->
+                <div class="col-12 col-md-6 order-2">
+                    <h2 class="text_titlegreen mt-2 fs22 fw-bold ">Qui sommes nous ?</h2>
+                    <p class="text-justify text_darkgreen ">Le projet <span class="fst-italic fw-bold">Greeny</span> est
+                        né
+                        de
+                        l’association <span class="fst-italic fw-bold">LaManuEcology</span>, dévouée à la préservation
+                        de la flore européenne, nous nous efforçons d'assurer la survie et l'adaptation des espèces
+                        végétales menacées à travers des initiatives de vente de graines et de sensibilisation du
+                        public. Notre engagement en faveur de la diversité biologique et de la durabilité
+                        environnementale en fait un acteur précieux dans la protection de notre patrimoine naturel
+                        commun.
+                    </p>
+                </div>
+
+                <!-- BLOC IMAGE -->
+                <div class="col-12 col-md-6 order-1 my-1">
+                    <img class="groupeImage"
+                        src="public/assets/img/about-us/techniciens-essayant-atteindre-objectifs-ambitieux-matiere-developpement-durable_23-2150950168.jpg"
+                        alt="photo de notre équipe">
+                </div>
+            </div>
+
+        </div>
+        <!-- CONTENEUR 2 -->
+        <div class="container my-5">
+            <div class="row d-flex align-items-center">
+                <!-- BLOC IMAGE -->
+                <div class="col-12 col-md-6 order-md-2 my-3">
+                    <img class="groupeImage"
+                        src="public/assets/img/about-us/techniciens-essayant-atteindre-objectifs-ambitieux-matiere-developpement-durable_23-2150950182.jpg"
+                        alt="photo de notre equipe">
+                </div>
+
+                <!-- BLOC TEXTE -->
+                <div class="col-12 col-md-6 order-md-1">
+                    <h2 class="text_titlegreen fs22 fw-bold">Notre histoire</h2>
+                    <p class="text_darkgreen text-justify">Notre association est née d’un groupe d'étudiants passionnés
+                        par
+                        la
+                        nature et la préservation de l'environnement. Il nous tenait à cœur de créer une entité
+                        entièrement dédiée à la cause environnementale. Sensibles à la perte d’espaces vert sur notre
+                        territoire et partout dans le monde, nous avons donc lancé un site communautaire novateur
+                        permettant l'échange de semences, de graines et de plantes. Notre objectif était simple mais
+                        puissant : faire fleurir la biodiversité dans le plus grand nombre d'écosystèmes possible. Ainsi
+                        naquit une communauté florissante, semant l'espoir d'un avenir plus vert à chaque échange de vie
+                        végétale.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <!-- CONTENEUR 3 -->
+        <div class="container my-5">
+            <div class="row d-flex align-items-center">
+                <!-- BLOC TEXTE -->
+                <div class="col-12 col-md-6 order-2">
+                    <h2 class="text_titlegreen ff-primary fs22 fw-bold">Notre mission</h2>
+                    <p class="text_darkgreen text-justify">Nous organisons régulièrement des ventes de graines de
+                        fleurs,
+                        d'arbres et de plantes menacées. Ces événements offrent une occasion précieuse de vous
+                        sensibiliser aux espèces en danger et de collecter des fonds pour soutenir les efforts de
+                        conservation. De plus, en disséminant ces graines dans divers écosystèmes, l'association
+                        contribue à promouvoir la diversité génétique et à renforcer la résilience des populations
+                        végétales.
+                        <br><br>
+
+                        En diffusant les graines de plantes menacées dans différents écosystèmes, <span
+                            class="fst-italic fw-bold">LaManuEcology</span> joue un
+                        rôle crucial dans la promotion de la survie et de l'adaptation des espèces. Cette approche
+                        proactive permet aux plantes de s'acclimater à de nouveaux environnements, de s'adapter aux
+                        changements climatiques et de coloniser des habitats propices à leur croissance et à leur
+                        développement.
+                        <br><br>
+
+                        En travaillant pour préserver la flore européenne, <span
+                            class="fst-italic fw-bold">LaManuEcology</span> démontre son engagement en
+                        faveur de la diversité biologique et de la durabilité environnementale. En encourageant la
+                        protection des plantes menacées et la restauration des écosystèmes dégradés, nous contribuons à
+                        créer un avenir plus résilient et équilibré pour les générations futures.
+                    </p>
+                </div>
+
+                <!-- BLOC IMAGE  -->
+                <div class="col-12 col-md-6 order-1 my-3">
+                    <img class="groupeImage"
+                        src="public/assets/img/about-us/objectifs-developpement-durable-nature-morte_23-2150196692.jpg"
+                        alt="4 petits blocs en bois avec les icones du developpement durable">
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </main>
+    <!-- FIN CORP DE TEXTE -->
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container-fluid bg_orange mb-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12">
+                        <p class="text-light mt-3 mb-0 text-center text-lg-start">LaManuEcology</p>
+                        <p class="text-light mb-0 text-center text-lg-start">238 Earls Ct Rd, Londres SW5 9AA</p>
+                        <p class="text-light mb-0 text-center text-lg-start">+44 20 7123 4567</p>
+                        <p class="text-light text-center text-lg-start">contact@lamanuecology.com</p>
+                    </div>
+                    <div class="col-lg-4 d-flex justify-content-center align-items-center">
+                        <a href=""><img src="./public/assets/img/questions-page/icon_ig.png" height="30" class="m-2"
+                                alt="Logo Instagram"></a>
+                        <a href=""><img src="./public/assets/img/questions-page/icon_twitter.png" height="30"
+                                class="m-2" alt="Logo Twitter / X"></a>
+                        <a href=""><img src="./public/assets/img/questions-page/icon_fb.png" height="30" class="m-2"
+                                alt="Logo Facebook"></a>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <p class="mt-3 mb-0 text-center text-lg-end"><a class="text-decoration-none
+                            text-light" href="./aboutus.html">À propos</a></p>
+                        <p class="mb-0 text-center text-lg-end"> <a class="text-decoration-none
+                            text-light" href="./questions.html">F.A.Q & Contact</a></p>
+                        <p class="mb-0 text-center text-lg-end"><a class="text-decoration-none
+                            text-light" href="">Mentions Légales</a></p>
+                        <p class="mb-0 text-center text-lg-end"><a class="text-decoration-none
+                            text-light" href="">CGU</a></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <p class="col-12 text-center text-light">Copyright Greeny 2024</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FIN FOOTER -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/afc6a54030.js" crossorigin="anonymous"></script>
+    <script src="public/assets/js/index.js"></script>
+</body>
+
+</html>
