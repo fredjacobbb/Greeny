@@ -525,3 +525,7 @@ footer p {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+.no-underline {
+    text-decoration: none;
+}
