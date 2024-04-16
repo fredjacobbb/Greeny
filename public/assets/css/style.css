@@ -529,3 +529,21 @@ footer p {
 .no-underline {
     text-decoration: none;
 }
+
+/* map */
+
+#map {
+    height: 70vh;
+    border-radius: 12px;
+}
+
+.infos-container {
+    border: 2px solid black;
+    border-radius: 12px;
+    margin-bottom: 4%;
+    padding: 4%;
+}
+
+.hidden {
+    display: none;
+}
