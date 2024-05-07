@@ -547,3 +547,7 @@ footer p {
 .hidden {
     display: none;
 }
+
+.nothidden {
+    display: block;
+}
